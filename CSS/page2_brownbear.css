@@ -1,0 +1,178 @@
+/* ----- desktop view ------- */
+html {
+  width: fit-content;
+  font-family: Verdana, sans-serif;
+  background-image: url(../Images/brownbear/bear-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+body {
+  margin: auto;
+}
+.section1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 60px;
+}
+#fullContent p {
+  font-size: 17px;
+  padding: 2px 30px;
+  color: white;
+  line-height: 30px;
+}
+.intro {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#intropara {
+  flex-basis: 54em;
+}
+#intropara p {
+  font-size: 18px;
+  color: black;
+  line-height: 30px;
+}
+.box {
+  flex-basis: 20em;
+  padding: 20px 0;
+}
+.distribution,
+.population,
+.mating {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  column-gap: 15px;
+  padding: 25px 10px;
+}
+.habitat,
+.diet,
+.facts {
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+  padding: 25px 10px;
+}
+.distpara {
+  background-color: #bfa58d;
+  border-radius: 9px;
+  padding-top: 10px;
+}
+.habitatpara {
+  background-color: #487985;
+  border-radius: 9px;
+}
+.poppara {
+  background-color: #6f5441;
+  border-radius: 9px;
+}
+#fullContent img {
+  width: 500px;
+  height: 310px;
+  border-radius: 9px;
+}
+#mainimage {
+  width: 760px;
+  height: 400px;
+}
+.dietpara {
+  background-color: #6e7748;
+  border-radius: 9px;
+}
+.matingpara {
+  background-color: #35652bdb;
+  border-radius: 9px;
+  padding-top: 12px;
+}
+main {
+  margin-top: 8em;
+}
+#fullContent h1 {
+  font-size: 4em;
+  color: #3d3836;
+  text-align: center;
+  text-shadow: 2px 3px #af9898;
+  line-height: 1em;
+}
+.box ul {
+  list-style-type: none;
+}
+
+#fullContent h2 {
+  font-size: 2em;
+  font-weight: 700;
+  color: #0d0a09e6;
+  padding-left: 1em;
+}
+#fullContent h3 {
+  font-weight: 600;
+  color: #f5f5dcd1;
+  font-size: 22px;
+  padding-left: 30px;
+}
+.heading {
+  font-size: 17px;
+  font-weight: bold;
+  color: #212357cc;
+}
+.value {
+  color: #eb1f1fd9;
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+#slideshow_images {
+  margin-right: 1em;
+}
+#accordion h3 {
+  color: #35271b;
+  background-color: #fbf6f0;
+  border: 2px solid #8a370a;
+  width: 35em;
+}
+
+/* ----- mobile view ------- */
+@media screen and (max-width: 760px) {
+  .section1 {
+    padding-top: 30px;
+    flex-wrap: wrap;
+  }
+  .intro,
+  .distribution,
+  .habitat,
+  .population,
+  .diet,
+  .mating,
+  .facts {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    margin: 20px 15px;
+  }
+  img {
+    margin-top: 2em;
+  }
+  #mainimage {
+    padding-top: 0;
+    margin-left: 0;
+  }
+  .value {
+    font-size: x-large;
+    text-align: center;
+  }
+  .heading {
+    font-size: larger;
+    text-align: center;
+  }
+  #slideshow {
+    margin-top: 0;
+  }
+  main {
+    margin-top: 0;
+  }
+  #accordion h3 {
+    margin-bottom: 12px;
+  }
+}

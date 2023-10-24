@@ -1,0 +1,192 @@
+/* ----- desktop view ------- */
+html {
+  font-family: Verdana, sans-serif;
+  background-image: url(../Images/beluga/beluga-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+body {
+  margin: 0 auto;
+}
+#fullContent h1 {
+  font-size: 4em;
+  color: #003955db;
+  text-align: center;
+  text-shadow: 2px 3px #649bbc;
+  margin-bottom: 0;
+}
+#fullContent h1 + p {
+  color: #5c799c;
+  font-weight: 600;
+  text-align: center;
+  font-size: 1.5em;
+}
+#fullContent p {
+  font-size: 17px;
+  padding: 2px 30px;
+  color: white;
+  line-height: 30px;
+}
+.section1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 30px;
+}
+.intro {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#intropara {
+  flex-basis: 50em;
+}
+#intropara p {
+  color: black;
+  font-size: 18px;
+  line-height: 30px;
+}
+.box {
+  flex-basis: 20em;
+  padding: 40px 0;
+}
+.distribution,
+.population,
+.mating {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  column-gap: 23px;
+  padding: 30px 10px;
+}
+.habitat,
+.diet,
+.facts {
+  display: flex;
+  align-items: center;
+  column-gap: 23px;
+  padding: 30px 10px;
+}
+.distpara {
+  background-color: #0885b6;
+  border-radius: 9px;
+}
+.habitatpara {
+  background-color: #0a2446bf;
+  border-radius: 9px;
+}
+.poppara {
+  background-color: #36647c;
+  border-radius: 9px;
+}
+#fullContent img {
+  width: 540px;
+  height: 310px;
+  border-radius: 9px;
+}
+#mainimage {
+  width: 670px;
+  height: 380px;
+  margin-left: 57px;
+}
+#habitatimage {
+  height: 335px;
+  width: 455px;
+}
+#populationimage {
+  height: 417px;
+  width: 550px;
+}
+.dietpara {
+  background-color: #46505c;
+  border-radius: 9px;
+}
+.matingpara {
+  background-color: #09656f;
+  border-radius: 9px;
+}
+main {
+  margin-top: 8em;
+}
+.box ul {
+  list-style-type: none;
+}
+.facts ul {
+  list-style-image: url(../Images/beluga/beluga-icon.png);
+  padding: 0px 5px 19px 4em;
+}
+.facts li {
+  color: #0d0f38;
+  font-size: 18px;
+  padding: 8px 10px;
+}
+#slideshow_images {
+  margin-right: 1em;
+}
+#fullContent h2 {
+  font-size: 2em;
+  font-weight: 700;
+  color: #aec7e6;
+  padding-left: 1em;
+}
+#fullContent h3 {
+  font-weight: 600;
+  color: #f3fbffcc;
+  font-size: 22px;
+  padding-left: 30px;
+}
+.heading {
+  font-size: 17px;
+  font-weight: bold;
+  color: #212357cc;
+}
+.value {
+  color: #eb1f1fd9;
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+#fullContent .facts h2 {
+  color: #0a2446;
+}
+
+/* ----- mobile view ------- */
+@media screen and (max-width: 760px) {
+  .section1 {
+    padding-top: 30px;
+    flex-wrap: wrap;
+  }
+  .intro,
+  .distribution,
+  .habitat,
+  .population,
+  .diet,
+  .mating,
+  .facts {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    margin: 20px 15px;
+  }
+  img {
+    margin-top: 2em;
+  }
+  .value {
+    font-size: x-large;
+    text-align: center;
+  }
+  .heading {
+    font-size: larger;
+    text-align: center;
+  }
+  #mainimage {
+    padding-top: 0;
+    margin-left: 0;
+  }
+  main {
+    margin-top: 0;
+  }
+  #slideshow {
+    margin-top: 0;
+  }
+}
